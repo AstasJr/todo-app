@@ -7,7 +7,7 @@ const TodoList = ({todos, onDeleted, onToggleImportant, onToggleDone}) => {
     //получаем элементы массива
     const elements = todos.map((item) => {
         //сохраняем свойства
-        const {id, ... itemProps} = item;
+        const {id, ...itemProps} = item;
         //возвращаем элемент
         return (
             <li key={id} className="list-group-item">
